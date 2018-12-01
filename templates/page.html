@@ -3,6 +3,10 @@
 
 {% block content %}
 
+  {% block header %}
+  {{ post_macros::navigation() }}
+  {% endblock header %}
+
 <article itemscope itemtype="http://schema.org/BlogPosting">
     <header>
         <h1 itemprop="headline">{{ page.title }}</h1>
